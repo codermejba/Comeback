@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+  </head>
+  <body>
+    <div>
+      <form id="myForm" action="">
+        First Number<input type="text" name="fNum" /> 
+        Second Number <input type="text" name="SNum" />
+        <!-- <input type="button" onclick="myFunction()" value="Submit"> -->
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-- JS -->
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevents the form from submitting/reloading the page
+
+         const formData = new FormData(form);
+        const formValues = Object.fromEntries(formData.entries());
+
+        console.log("Form Data Submitted:", formValues);
+        
+      });
+    </script>
+  </body>
+  <!-- <script src="index.js"></script> -->
+</html>

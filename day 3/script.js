@@ -4,7 +4,9 @@ let result =document.getElementById("result");
 
 
 btn.addEventListener("click",function(){
-    console.log(num.value);
+    if(num.value===''){
+        return alert("Enter Number To Check Even Or Odd");
+    }
     
     if(num.value % 2 === 0){
         result.innerText = `${num.value} is Even Number`;

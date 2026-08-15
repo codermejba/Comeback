@@ -10,6 +10,12 @@ btn.addEventListener("click", () => {
        
         return alert("Enter a valid array");
     }
-    const sum=arr.reduce((acc,curr)=> acc+curr,0)
+    //const sum=arr.reduce((acc,curr)=> acc+curr,0)
+
+    let sum=0
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+        
+    }
    result.innerText=`Sum of the array is ${sum}`
 })

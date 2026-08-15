@@ -67,4 +67,4 @@ for (let i = 0; i < numbers.length; i++) {
 
 console.log(even);
 
-//challenge completed — 12/13min
+// 

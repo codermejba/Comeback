@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./MemoryGame.css";
+import "../styles/MemoryGame.css";
 
 const cards = [
   { id: 1, value: "🧠" },
@@ -28,7 +28,7 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-function MemoryGame() {
+function CardMemoryGame() {
   const [gameCards, setGameCards] = useState(() =>
     shuffleArray(cards)
   );
@@ -390,4 +390,4 @@ function MemoryGame() {
   );
 }
 
-export default MemoryGame;
+export default CardMemoryGame;

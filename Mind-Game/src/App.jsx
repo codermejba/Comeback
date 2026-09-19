@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Games from "./pages/Games";
-import MemoryGame from "./pages/MemoryGame";
+import NumberSequenceGame from "./pages/NumberSequenceGame";
+import CardMemoryGame from "./pages/CardMemoryGame";
+import AllMemoryGames from "./pages/AllMemoryGames";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/games" element={<Games />} />
-        <Route path="/games/memory" element={<MemoryGame />} />
+        <Route path="/games/all-memory-games" element={<AllMemoryGames />} />
+        <Route path="/games/all-memory-games/card-memory" element={<CardMemoryGame />} />
+        <Route path="/games/all-memory-games/number-sequence" element={<NumberSequenceGame />} />
       </Routes>
     </BrowserRouter>
   );

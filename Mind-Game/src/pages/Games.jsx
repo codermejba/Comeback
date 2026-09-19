@@ -37,7 +37,7 @@ function Games() {
   return (
     <div className="games-page">
       <div className="games-header">
-        <span className="section-label">CHOOSE YOUR CHALLENGE</span>
+        <span className="memory-label"><span className="memory-label-dot"></span>CHOOSE YOUR CHALLENGE</span>
 
         <h1>
           Train Your <span>Mind</span>
@@ -63,7 +63,7 @@ function Games() {
               className="play-game-button"
               onClick={() => {
                 if (game.title === "Memory") {
-                  navigate("/games/memory");
+                  navigate("/games/all-memory-games");
                 }
               }}
             >
